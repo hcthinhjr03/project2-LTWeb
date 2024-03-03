@@ -18,7 +18,7 @@ var varDeclared = ['varDeclared', 'p1Message', 'p2Message', 'p3Message'];
 // ************************* Test makeMultiFilter *************************
 
 if (typeof MakeMultiFilter !== 'function') {
-    console.error('cs142MakeMultiFilter is not a function', typeof MakeMultiFilter);
+    console.error('MakeMultiFilter is not a function', typeof MakeMultiFilter);
     p1Message = 'FAILURE';
 } else {
 
@@ -41,7 +41,7 @@ if (typeof MakeMultiFilter !== 'function') {
     var filterFuncTwo = MakeMultiFilter(secondArray);
 
     if (typeof filterFunc !== 'function') {
-        console.error('cs142MakeMultiFilter does not return a function', filterFunc);
+        console.error('MakeMultiFilter does not return a function', filterFunc);
         p1Message = 'FAILURE';
     } else {
         var result = filterFunc();
@@ -110,7 +110,7 @@ console.log('Test MakeMultiFilter:', p1Message);
 // ************************ Test TemplateProcessor ************************
 
 if (typeof TemplateProcessor !== 'function') {
-    console.error('Cs142TemplateProcessor is not a function', TemplateProcessor);
+    console.error('TemplateProcessor is not a function', TemplateProcessor);
     p2Message = 'FAILURE';
 } else {
 
@@ -145,7 +145,7 @@ console.log('Test Problem 3:', p3Message);
 
 // Store the result back into the global space under the object name
 // Project2Results
-window.cs142Project2Results = {
+window.Project2Results = {
     p1Message: p1Message,
     p2Message: p2Message,
     p3Message: p3Message,
